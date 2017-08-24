@@ -1,0 +1,55 @@
+#: init/ant-service.js
+msgid "Ant task"
+msgstr "Tarea de Ant"
+
+#: init/ant-service.js
+msgid "No server selected"
+msgstr "No se ha seleccionado servidor"
+
+#: init/ant-service.js
+msgid "No option selected"
+msgstr "No se ha seleccionado opción"
+
+#: init/ant-service.js
+msgid "Starting Apache Ant task"
+msgstr "Iniciando el comando de Apache Ant"
+
+#: init/ant-service.js
+msgid "Apache Ant task finished"
+msgstr "Comando de Apache Ant finalizado"
+
+#: public/form/ant-service-form.js
+msgid "Server"
+msgstr "Servidor"
+
+#: public/form/ant-service-form.js
+msgid "Command"
+msgstr "Comando"
+
+#: public/form/ant-service-form.js
+msgid "Project help"
+msgstr "Ayuda de proyecto"
+
+#: public/form/ant-service-form.js
+msgid "Diagnostics"
+msgstr "Diagnostico"
+
+#: public/form/ant-service-form.js
+msgid "Debug"
+msgstr "Debug"
+
+#: public/form/ant-service-form.js
+msgid "Lib"
+msgstr "Lib"
+
+#: public/form/ant-service-form.js
+msgid "Custom command"
+msgstr "Comando personalizado"
+
+#: public/form/ant-service-form.js
+msgid "Custom commands or arguments"
+msgstr "Comando personalizado o argumento"
+
+#: public/form/ant-service-form.js
+msgid "Project Path"
+msgstr "Ruta del Proyecto"

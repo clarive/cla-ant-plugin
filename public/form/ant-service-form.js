@@ -15,13 +15,14 @@
         name: 'command',
         fieldLabel: _('Command'),
         data: [
+            ['-buildfile',_('Build file')],
             ['-projecthelp',_('Project help')],
             ['-diagnostics',_('Diagnostics')],
             ['-debug',_('Debug')],
             ['-lib',_('Lib')],
             ['custom',_('Custom command')]
         ],
-        value: data.command || '-projecthelp',
+        value: data.command || '-buildfile',
         allowBlank: false,
         anchor: '100%',
         singleMode: true

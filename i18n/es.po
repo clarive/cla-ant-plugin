@@ -23,6 +23,10 @@ msgid "Server"
 msgstr "Servidor"
 
 #: public/form/ant-service-form.js
+msgid "Build file"
+msgstr "Compilar archivo"
+
+#: public/form/ant-service-form.js
 msgid "Command"
 msgstr "Comando"
 

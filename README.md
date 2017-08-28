@@ -3,6 +3,15 @@
 
 Ant plugin will allow you to launch Apache Ant commands from a Clarive instance.
 
+## What is Apache Ant
+
+Apache Ant is a Java library and command-line tool whose mission is to drive processes described in build files as targets and extension points dependent upon each other.
+The main known usage of Ant is the build of Java applications.
+
+Ant can also be used effectively to build non Java applications, for instance C or C++ applications.
+More generally, Ant can be used to pilot any type of process which can be described in terms of targets and tasks.
+
+
 ## Requirements
 
 Apache Ant is needed in order for it to work properly .
@@ -21,10 +30,16 @@ Once the plugin is correctly installed, you will have a new palette service call
 This palette service will let you choose the option that you wish to perform with Apache Ant.
 The various parameters from the palette service are:
 
-- **Server** - Choose the server where you wish to execute the code. 
+- **Server** - Choose the server where you wish to execute the command. 
 - **Project path** - Directory for the build.xml file.
 - **Command** - Here you will have different commands to launch with the service or write a custom one.
-- **Custom command or arguments** -Here you can write arguments for the selected command or write the commands you want to perform.
+   - **Build file** - Takes the specified file in the arguments box to build the project.
+   - **Project help** - Displays information about the project.
+   - **Diagnostics** -  Prints information that might be helpful to diagnose or report problems.
+   - **Debug** - Prints debugging information.
+   - **Lib** - Specifies a path in the arguments box to search for jars and classes.
+   - **Custom command** - Write the ant option in the arguments box. 
+- **Custom command or arguments** - Here you can write arguments for the selected command or write the commands you want to perform.
 - **Errors and output** - These two fields are related to manage control errors. Options are:
    - **Fail and output error** - Search for configurated error pattern in script output. If found, an error message is
      displayed in monitor showing the match.

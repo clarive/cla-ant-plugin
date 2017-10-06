@@ -4,7 +4,7 @@
 
     var antServerCombo = Cla.ui.ciCombo({
         name: 'antServer',
-        class: 'generic_server',
+        role: 'Server',
         fieldLabel: _('Server'),
         value: data.antServer || '',
         allowBlank: false,

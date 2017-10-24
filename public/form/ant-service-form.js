@@ -11,16 +11,23 @@
         with_vars: 1
     });
 
+    var userTextField = Cla.ui.textField({
+        name: 'user',
+        fieldLabel: _('User'),
+        value: data.user || '',
+        allowBlank: true
+    });
+
     var commandComboBox = Cla.ui.comboBox({
         name: 'command',
         fieldLabel: _('Command'),
         data: [
-            ['-buildfile',_('Build file')],
-            ['-projecthelp',_('Project help')],
-            ['-diagnostics',_('Diagnostics')],
-            ['-debug',_('Debug')],
-            ['-lib',_('Lib')],
-            ['custom',_('Custom command')]
+            ['-buildfile', _('Build file')],
+            ['-projecthelp', _('Project help')],
+            ['-diagnostics', _('Diagnostics')],
+            ['-debug', _('Debug')],
+            ['-lib', _('Lib')],
+            ['custom', _('Custom command')]
         ],
         value: data.command || '-buildfile',
         allowBlank: false,
@@ -29,19 +36,19 @@
     });
 
     var customParams = Cla.ui.arrayGrid({
-            fieldLabel: _('Custom commands or arguments'),
-            name: 'custom',
-            value: data.custom,
-            description: _('Custom commands or arguments'),
-            default_value: '.'
+        fieldLabel: _('Custom commands or arguments'),
+        name: 'custom',
+        value: data.custom,
+        description: _('Custom commands or arguments'),
+        default_value: '.'
     });
 
     var pathText = Cla.ui.textField({
-            name: 'path',
-            fieldLabel: _('Project Path'),
-            value: data.path || '',
-            allowBlank: false
-        });
+        name: 'path',
+        fieldLabel: _('Project Path'),
+        value: data.path || '',
+        allowBlank: false
+    });
 
 
     var errorBox = Cla.ui.errorManagementBox({
@@ -60,6 +67,7 @@
         layout: 'form',
         items: [
             antServerCombo,
+            userTextField,
             pathText,
             commandComboBox,
             customParams,

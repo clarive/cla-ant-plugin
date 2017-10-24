@@ -1,4 +1,4 @@
-name: Clarive Ant Plugin
+name: Ant Plugin
 description: Ant plugin will allow you to launch Apache Ant commands from a Clarive instance.
 version: 1.0
 icon: https://cdn.rawgit.com/clarive/cla-ant-plugin/master/public/icon/ant.svg?sanitize=true

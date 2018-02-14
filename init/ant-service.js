@@ -27,8 +27,8 @@ reg.register('service.ant.task', {
     handler: function(ctx, params) {
 
         var reg = require('cla/reg');
-        var fs = require('cla/fs');
         var log = require('cla/log');
+        var ci = require('cla/ci');
 
         var server = params.antServer;
         var path = params.path || "";
@@ -38,9 +38,14 @@ reg.register('service.ant.task', {
         var fullCommand = "";
         var user = params.user || "";
 
-
         if (server == "") {
             log.fatal(_("No server selected"));
+        }
+        var serverCheck = ci.findOne({
+            mid: server + ''
+        });
+        if (!serverCheck){
+            log.fatal(_("Server Resource doesn't exist"));
         }
 
         function remoteCommand(params, command, server, errors, user) {
@@ -74,7 +79,7 @@ reg.register('service.ant.task', {
 
         log.info(_("Starting Apache Ant task"));
         var response = remoteCommand(params, fullCommand, server, errors, user);
-        log.info(_("Apache Ant task finished"));
+        log.info(_("Apache Ant task finished"), response.output);
         return response.output;
     }
 });

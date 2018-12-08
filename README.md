@@ -1,6 +1,6 @@
 # Ant plugin
 
-<img src="https://cdn.rawgit.com/clarive/cla-ant-plugin/master/public/icon/ant.svg?sanitize=true" alt="Ant Plugin" title="Ant Plugin" width="120" height="120">
+<img src="https://cdn.jsdelivr.net/gh/clarive/cla-ant-plugin/public/icon/ant.svg?sanitize=true" alt="Ant Plugin" title="Ant Plugin" width="120" height="120">
 
 Ant plugin will allow you to launch Apache Ant commands from a Clarive instance.
 
